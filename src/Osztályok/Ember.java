@@ -6,7 +6,8 @@ public class Ember {
     private String nev;
     private int SzulEv;
     private int munkaEv;
-    public Ember(String nev, int kor, int munkaEv) {
+    
+    public Ember(String nev, int SzulEv, int munkaEv) {
         this.nev = nev;
         this.SzulEv = SzulEv;
         this.munkaEv = munkaEv;
@@ -15,9 +16,11 @@ public class Ember {
     }
 
     public Ember(String nev, int SzulEv) {
-        this.nev = nev;
-        this.SzulEv = SzulEv;
-        this.munkaEv = 0;
+        this(nev, SzulEv, 0);
+    }
+
+    public Ember(String nev) {
+        this(nev, 2000, 0);
     }
 
     
